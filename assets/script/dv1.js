@@ -300,7 +300,7 @@ function dv1(year,the_subject,sort) {
 
                 //size
                 content += "<tr><td class='label'>dimensioni</td><td class='value'>" + d.size.toLocaleString()
-        		if(year != 2020){
+        		if(year != starting_year){
         			let diff_size = d.size - d.size_prev
 	            	if (diff_size > 0){
 	            		content += "<td class='value increase'>(" + /* d.size_prev + " " + */ variation_perc(d.size,d.size_prev,"visits") + ")</td></tr>"
@@ -312,7 +312,7 @@ function dv1(year,the_subject,sort) {
 
             	// discussion
             	content += "<tr><td class='label'>discussione</td><td class='value'>" + d.discussion_size.toLocaleString()
-            	if(year != 2020){
+            	if(year != starting_year){
             		let diff_discussion = d.discussion_size - d.discussion_prev
 	            	if (diff_discussion > 0){
 	            		content += "<td class='value increase'>(" + /* d.discussion_prev + " " + */ variation_perc(d.discussion_size,d.discussion_prev,"discussion") + ")</td></tr>"
@@ -324,7 +324,7 @@ function dv1(year,the_subject,sort) {
 
             	// incipit
             	content += "<tr><td class='label'>incipit</td><td class='value'>" + d.incipit_size.toLocaleString()
-            	if(year != 2020){
+            	if(year != starting_year){
             		let diff_incipit = d.incipit_size - d.incipit_prev
 	            	if (diff_incipit > 0){
 	            		content += "<td class='value increase'>(" + /* d.incipit_prev + " " + */ variation_perc(d.incipit_size,d.incipit_prev,"incipit") + ")</td></tr>"
@@ -336,7 +336,7 @@ function dv1(year,the_subject,sort) {
 
             	// issues
             	content += "<tr><td class='label'>avvisi</td><td class='value'>" + d.issues.toLocaleString()
-            	if(year != 2020){
+            	if(year != starting_year){
             		let diff_issues = d.issues - d.issues_prev
 	            	if (diff_issues > 0){
 	            		content += "<td class='value decrease'>(" + /* d.issues_prev + " " + */ variation_perc(d.issues,d.issues_prev,"issues") + ")</td></tr>"
@@ -348,7 +348,7 @@ function dv1(year,the_subject,sort) {
 
 				// images
 				content += "<tr><td class='label'>immagini</td><td class='value'>" + d.images.toLocaleString()
-            	if(year != 2020){
+            	if(year != starting_year){
             		let diff_images = d.images - d.images_prev
 	            	if (diff_images > 0){
 	            		content += "<td class='value increase'>(" + /* d.images_prev + " " + */ variation_perc(d.images,d.images_prev,"images") + ")</td></tr>"

@@ -72,10 +72,7 @@ const subjects = [
 	"Química"
 ]
 
-// const literature_ = [
-// 	"it",
-// 	"la"
-// ]
+const starting_year = 2022;
 
 function mobile_menu() {
  	let open = false;

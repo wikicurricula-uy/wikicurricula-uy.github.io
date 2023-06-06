@@ -249,7 +249,7 @@ function dv2(year,the_subject,sort) {
 
 	            // issues
                 content += "<tr><td class='label'>avvisi</td><td class='value'>" + d.issues.toLocaleString()
-                if(year != 2020){
+                if(year != starting_year){
 	                if (d.issues_prev !== "-"){
 		            	let diff_issues = d.issues - d.issues_prev;
 		            	if (diff_issues > 0){
@@ -268,7 +268,7 @@ function dv2(year,the_subject,sort) {
             	
             	// notes
             	content += "<tr><td class='label'>note</td><td class='value'>" + d.notes.toLocaleString()
-            	if(year != 2020){
+            	if(year != starting_year){
             		if (d.notes_prev !== "-"){
 		            	let diff_notes = d.notes - d.notes_prev;
 		            	if (diff_notes > 0){
@@ -282,7 +282,7 @@ function dv2(year,the_subject,sort) {
 
                 // images
                 content += "<tr><td class='label'>immagini</td><td class='value'>" + d.images.toLocaleString()
-            	if(year != 2020){
+            	if(year != starting_year){
             		if (d.images_prev !== "-"){
 		            	let diff_images = d.images - d.images_prev;
 		            	if (diff_images > 0){
