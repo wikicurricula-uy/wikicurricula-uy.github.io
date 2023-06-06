@@ -1,4 +1,4 @@
-const wiki_link = "https://it.wikipedia.org/wiki/";
+const wiki_link = "https://es.wikipedia.org/wiki/";
 const ws_it_author_link = "https://it.wikisource.org/wiki/Autore:"
 const ws_la_author_link = "https://la.wikisource.org/wiki/Scriptor:"
 const ws_it_publication_link = "https://it.wikisource.org/wiki/"

@@ -3,7 +3,7 @@ const font_size = 10;
 const shiftx_article = 30;
 const v_shift = 8;
 const h_space = 2;
-const wiki_link = "https://it.wikipedia.org/wiki/";
+const wiki_link = "https://es.wikipedia.org/wiki/";
 const filter_item = 130; 
 // const article_width = 5;
 

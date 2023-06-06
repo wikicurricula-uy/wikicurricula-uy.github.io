@@ -55,24 +55,21 @@ function variation_perc(now,prev,parameter){
 }
 
 const subjects = [
-	"Tutte le materie",
-	"Biologia",
-	"Chimica",
-	"Cittadinanza e costituzione",
-	"Diritto e Economia",
-	"Filosofia",
-	"Fisica",
-	"Geografia",
-	"Grammatica italiana",
-	"Grammatica latina",
-	"Informatica",
-	"Letteratura italiana",
-	"Letteratura latina",
-	"Matematica",
-	"Scienze della Terra",
-	"Scienze",
-	"Storia",
-	"Tecnologia"
+	"all",
+	"Arte",
+	"Biología",
+	"Ciencias",
+	"Ciencias de la computación",
+	"Ciudadanía",
+	"Derecho y economía",
+	"Filosofía",
+	"Física",
+	"Geografía",
+	"Gramática",
+	"Literatura",
+	"Matemática",
+	"Historia",
+	"Química"
 ]
 
 // const literature_ = [

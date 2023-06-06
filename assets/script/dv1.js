@@ -14,7 +14,7 @@ const container = "#dv1";
 const font_size = 10;
 const filter_item = 120; // 120
 const shiftx_article = 30;
-const wiki_link = "https://it.wikipedia.org/wiki/";
+const wiki_link = "https://es.wikipedia.org/wiki/";
 const variation_line_opacity = 0.7;
 
 const stroke_dash = "3,3";
@@ -81,7 +81,6 @@ let improv_delay = 1800;
 
 function dv1(year,the_subject,sort) {
 	d3.tsv("assets/data/voci_" + year + ".tsv").then(loaded)
-	// console.log(year,the_subject,sort)
 
 	function loaded(data) {
 
@@ -93,9 +92,8 @@ function dv1(year,the_subject,sort) {
 		let subject_group = d3.nest()
 			.key(d => d.subject)
 			.entries(data)
-	
+		
 		for (const [d,c] of Object.entries(subject_group)) {
-
 			// all subjects
 			if (the_subject == "all"){
 
@@ -113,7 +111,6 @@ function dv1(year,the_subject,sort) {
 				}
 			}
 		}
-		// console.log(subject_group);
 		
 		visit_sort = subject_articles.sort(function(x, y){
 			return d3.descending(+x.avg_pv, +y.avg_pv);
@@ -922,7 +919,7 @@ function dv1(year,the_subject,sort) {
 				.on("mouseout", handleMouseOut)
 				.append("a")
 				.attr("xlink:href", function(d,i){
-					return "https://it.wikipedia.org/wiki/" + d.article
+					return wiki_link + d.article
 				})
 				.attr("target","_blank")
 				
@@ -1044,7 +1041,6 @@ function dv1(year,the_subject,sort) {
 		}
 
 		function update_sort(the_subject,the_sort){
-			// console.log(the_subject)
 
 			//load data
 			total = 0;
@@ -1220,10 +1216,9 @@ function getRandomIntInclusive(min, max) {
 }
 
 $(document).ready(function() {
-	const random_subject = getRandomIntInclusive(1,17);
+	const random_subject = getRandomIntInclusive(1,subjects.length-1);
 	document.getElementById("subjects").selectedIndex = random_subject;
-
-	dv1(2021,subjects[random_subject],parseInt(1));
+	dv1(2022,subjects[random_subject],parseInt(1));
 	get_year();
 });
 
