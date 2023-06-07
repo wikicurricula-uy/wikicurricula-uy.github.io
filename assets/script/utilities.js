@@ -1,13 +1,13 @@
 function apply_color(subject){
 	let color;
 
-	if (subject == "Letteratura italiana"  || subject == "Letteratura latina" || subject == "Storia" || subject == "Storia dell'arte" || subject == "Filosofia" || subject == "Grammatica italiana" || subject == "Grammatica latina") {
+	if (subject == "Literatura" || subject == "Historia" || subject == "Arte" || subject == "Filosofía" || subject == "Gramática") {
 		color = "#ef95c4"; //"#eeb4ee";
 	}
-	else if (subject == "Informatica" || subject == "Tecnologia"){
+	else if (subject == "Ciencias de la computación"){
 		color = "#3a34e0"; // "blue";
 	}
-	else if (subject == "Geografia"  || subject == "Diritto e Economia" || subject == "Cittadinanza e costituzione"){
+	else if (subject == "Geografía"  || subject == "Derecho y economía" || subject == "Ciudadanía"){
 		color = "#00b2ff";
 	}
 	else { // Biologia Chimica Fisica Matematica Scienze della Terra Scienze
