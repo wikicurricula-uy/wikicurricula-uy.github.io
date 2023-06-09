@@ -1,16 +1,20 @@
 function apply_color(subject){
 	let color;
 
-	if (subject == "Literatura" || subject == "Historia" || subject == "Arte" || subject == "Filosofía" || subject == "Gramática") {
+	//Ciencias sociales y humanidades
+	if (subject == "Historia") {
 		color = "#ef95c4"; //"#eeb4ee";
 	}
-	else if (subject == "Ciencias de la computación"){
+	//Técnico-tecnológico
+	else if (subject == "Ciencias de la computación" || subject == "Tecnología"){
 		color = "#3a34e0"; // "blue";
 	}
-	else if (subject == "Geografía"  || subject == "Derecho y economía" || subject == "Ciudadanía"){
+	//Comunicación y Arte
+	else if (subject == "Comunicación y sociedad"  || subject == "Lengua española" || subject == "Comunicación visual y diseño" || subject == "Literatura"){
 		color = "#00b2ff";
 	}
-	else { // Biologia Chimica Fisica Matematica Scienze della Terra Scienze
+	//Científico-matemático
+	else {
 		color = "green";
 	}
 	return color;
@@ -56,20 +60,19 @@ function variation_perc(now,prev,parameter){
 
 const subjects = [
 	"all",
-	"Arte",
 	"Biología",
-	"Ciencias",
 	"Ciencias de la computación",
-	"Ciudadanía",
-	"Derecho y economía",
-	"Filosofía",
+	"Ciencias del ambiente",
+	"Comunicación visual y diseño",
+	"Comunicación y sociedad",
 	"Física",
 	"Geografía",
-	"Gramática",
+	"Historia",
+	"Lengua española",
 	"Literatura",
 	"Matemática",
-	"Historia",
-	"Química"
+	"Química",
+	"Tecnología"
 ]
 
 const starting_year = 2022;
