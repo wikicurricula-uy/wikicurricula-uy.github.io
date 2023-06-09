@@ -1,53 +1,54 @@
 <!DOCTYPE HTML>
-<html lang="it">
+<html lang="es">
 	<head>
-		<title>Wikipedia e scuola italiana</title>
+		<title>Wikicurrícula Uy</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
 		<meta name="description" content="La visualizzazione mostra gle voci con più visite medie giornaliere per materia scolastica">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="assets/style/style.css">
+		<link rel="icon" href="/assets/img/favicon-192.png" sizes="192x192">
 
 		<!-- social sharing - facebook -->
 		<meta property="og:type" content="article">
-		<meta property="og:title" content="Wikipedia e scuola italiana">
-		<meta property="og:description" content="Report visuale interattivo che mostra i risultati dell'analisi di voci di Wikipedia legate alle materie di studio nella scuola italiana"></meta>
+		<meta property="og:title" content="Wikicurrícula Uy">
+		<meta property="og:description" content="Reporte visual interactivo que analiza los artículos de Wikipedia relevantes a la currícula de la educación secundaria en Uruguay"></meta>
 		<meta property="og:image" content="https://itwiki-scuola-italiana.toolforge.org/assets/img/wikipedia-scuola-italiana_preview-fb.png" />
 	    <meta property="og:image:width" content="1200" />
 	    <meta property="og:image:height" content="630" />
-	    <meta property="og:site_name" content="Wikipedia e scuola italiana - report visuale interattivo">
-		<meta property="og:url" content="https://itwiki-scuola-italiana.toolforge.org/">
+	    <meta property="og:site_name" content="Wikicurrícula Uy - reporte visual interactivo">
+		<meta property="og:url" content="https://wikicurricula-uy.github.io/">
 
 		<!-- social sharing - twitter -->
 		<meta name="twitter:card" content="summary_large_image"></meta>
-		<meta name="twitter:title" content="Wikipedia e scuola italiana - report visuale interattivo"></meta>
-		<meta name="twitter:description" content="Report visuale interattivo che mostra i risultati dell'analisi di voci di Wikipedia legate alle materie di studio nella scuola italiana"></meta>
+		<meta name="twitter:title" content="Wikicurrícula Uy - reporte visual interactivo"></meta>
+		<meta name="twitter:description" content="Reporte visual interactivo que analiza los artículos de Wikipedia relevantes a la currícula de la educación secundaria en Uruguay"></meta>
 	    <meta property="og:image" content="https://itwiki-scuola-italiana.toolforge.org/assets/img/wikipedia-scuola-italiana_preview-twitter.png" />
-	    <meta name="twitter:site" content="Wikipedia e scuola italiana" />
-	  	<meta property="og:url" content="https://itwiki-scuola-italiana.toolforge.org/" />
+	    <meta name="twitter:site" content="Wikicurrícula Uy" />
+	  	<meta property="og:url" content="https://wikicurricula-uy.github.io/" />
 	</head>
 	<body> 
 		<header>
 			<div id="header">
 				<div class="container">
 					<h1>
-						<a href="" title="Wikipedia e scuola italiana" class="noselect">
-							Wikipedia e scuola italiana
+						<a href="" title="Wikicurrícula Uy" class="noselect">
+							Wikicurrícula Uy
 						</a>
 					</h1>
 				</div>
 			</div>
-			<nav id="menu">
+			<!--<nav id="menu">
 				<ul class="container">
 					<li><a href="../" style="color: #ccc" class="noselect">Voci più viste</a></li>
 					<li><a href="avvisi" class="noselect">Voci con avvisi</a></li>
 					<li><a href="autori" class="noselect">Autori e pubblicazioni</a></li>
 				</ul>
-			</nav>
-			<div id="mobile_menu_icon"></div>
+			</nav>-->
+			<!--<div id="mobile_menu_icon"></div>-->
 		</header>
-		<div id="mobile_menu_box">
+		<!--<div id="mobile_menu_box">
 			<nav id="mobile_menu">
 				<ul class="">
 					<li><a href="../" style="color: #ccc">Voci più viste</a></li>
@@ -55,21 +56,21 @@
 					<li><a href="autori">Autori e pubblicazioni</a></li>
 				</ul>
 			</nav>
-		</div>
+		</div>-->
 		<main>
 			<section id="dataviz">
 				<div id="select_section_1">
 					<div id="filter_button">
 						<div class="filter">
 							<div class=container>
-								Filtra
+								Filtros
 							</div>
 						</div>
 						<div id="mobile_filter_icon"></div>
 					</div>
 					<div class="select_box" id="select_box">
 						<div id="select_year" class="selector">
-							<p class="key noselect">Anno</p>
+							<p class="key noselect">Año</p>
 							<select name="subjects" id="year" class="select value noselect">
 								<option value="2022">2022</option>
 							</select>
@@ -95,15 +96,15 @@
 							</select>
 						</div>
 						<div class="selector">
-							<p class="key noselect">Ordina per</p>
+							<p class="key noselect">Ordenar por</p>
 							<select name="sort" id="sort" class="select value noselect">
-								<option name="article" value="1">titolo</option>
-								<option name="publication" value="2">data di pubblicazione</option>
-								<option name="size" value="3">dimensione voce</option>
-								<option name="discussion" value="4">dimensione pagina di discussione</option>
-								<option name="incipit" value="5">dimensione incipit</option>
+								<option name="article" value="1">nombre del artículo</option>
+								<option name="publication" value="2">fecha de publicación</option>
+								<option name="size" value="3">tamaño del artículo</option>
+								<option name="discussion" value="4">tamaño de la página de discusión</option>
+								<option name="incipit" value="5">tamaño de la introducción</option>
 								<!--<option name="issue" value="6">numero di avvisi</option>-->
-								<option name="images" value="7">numero di immagini</option>
+								<option name="images" value="7">número de imágenes</option>
 							</select>
 						</div>
 					</div>
@@ -114,45 +115,55 @@
 			<section id="legend" class="container">
 				<div id="dv_infobox" class="row">
 					<div class="column_3">
-						<h2>Come leggere la visualizzazione</h2>
+						<h2>Cómo leer la visualización</h2>
 						<p>
-							La visualizzazione mostra le voci con più visite medie giornaliere per materia scolastica (i dati sono raccolti ogni anno a giugno).<br/>
-							Le dimensioni della voce, della pagina di discussione e dell'incipit sono espresse in byte. Per ogni materia sono mostrati un massimo di 120 voci.<br/><br/>
-							Il cerchio di colore chiaro rappresenta la dimensione della voce, il cerchio scuro rappresenta la dimensione dell’incipit e il cerchio con il solo contorno rappresenta la dimensione della pagina di discussione.<br/>
-							I cerchi e le linee tratteggiate indicano rispettivamente la dimensione dell'articolo e le visite giornaliere nell'anno precedente.<br/> 
-							I triangolini sopra i cerchi indicano che la voce è stata migliorata se si verificano una o più di queste condizioni: è stato ampliato l'incipit, è stato rimosso almeno un avviso, è stata aggiunta almeno un'immagine. 
+							La visualización muestra los artículos que identificamos como relacionados con la currícula de la educación secundaria en Uruguay. Los datos se recopilarán en cada fin de año escolar (en diciembre).
 							<br/><br/>
-							Scegli dal menu in alto una materia e l'ordine di visualizzazione per ottenere maggiori informazioni.
+							El tamaño del artículo, de la página de discusión y de la introducción se expresan en bytes. El círculo de color claro representa el tamaño del artículo, el círculo oscuro representa el tamaño de la introducción y el círculo con solo el contorno representa el tamaño de la página de discusión.
+							<br/><br/>
+							El eje vertical, es decir la altura del punto en el gráfico, representa la cantidad de visitas diarias promedio durante el año analizado. Las líneas discontinuas indican las visitas diarias promedio en el año anterior.
+							<br/><br/>
+							En el menú de arriba puedes elegir una materia y el orden de los artículos en el eje horizontal. Pasa el cursor por encima del círculo para ver más información, y cliquea para ir al artículo en Wikipedia.
 						</p>
 					</div>
 					<div id="dv1_legend_a" class="column_3 legend">
-						<img src="assets/img/dv1_legend_a.svg" width="326" height="262" alt="Il cerchio di colore chiaro rappresenta la dimensione della voce, il cerchio scuro rappresenta la dimensione dell’incipit e il cerchio con il solo contorno rappresenta la dimensione della pagina di discussione.">
+						<img src="assets/img/dv1_legend_a.svg" width="326" height="262" alt="El círculo de color claro representa el tamaño del artículo, el círculo de color oscuro representa la dimensión de la introducción y la circunferencia representa el tamaño de la página de discusión.">
 					</div>
 					<div id="dv1_legend_b" class="column_3 legend">
-						<img src="assets/img/dv1_legend_b.svg" width="326" height="155" alt="Il cerchio rosa rappresenta una disciplina umanistica, il cerchio verde rappresenta una scienza naturale, il cerchio celeste rappresenta una scienza sociale e il cerchio viola rappresenta una scienza applicata.">
+						<img src="assets/img/dv1_legend_b.svg" width="326" height="155" alt="El color rosa representa las disciplinas humanísticas, el color verde representa las ciencias naturales, el color celeste representa las ciencias sociales y el color violeta representa las ciencias aplicadas.">
 					</div>
 				</div>
 			</section>
 			<section class="container">
 				<div id="dv1_dataset" class="dataset">
-					<a href="assets/data/voci/voci.zip" title="" style="font-size: 0.9em; margin-bottom: 30px; display: block;">
-						Scarica i dati <img src="assets/img/download.svg" width="20" height="20" alt="Scarica i dati">
+					<a href="assets/data/voci_2022.tsv" title="" style="font-size: 0.9em; margin-bottom: 30px; display: block;">
+						Descarga los datos <img src="assets/img/download.svg" width="20" height="20" alt="Descarga los datos">
 					</a>
 				</div>
 			</section>
 			<footer>
 				<div id="colophon" class="container">
-					<h2>Crediti</h2>
+					<h2>Créditos: Wikicurrícula Uy</h2>
 					<div class="row">
 						<div class="column_3">
 							<div class="section">
-								<h3>Ideazione e responsabile</h3>
+								<p>
+									<a href="https://wikimedistas.uy/" target="_blank">Wikimedistas de Uruguay</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<h2>Créditos del proyecto original: Wikipedia e Scuola Italiana </h2>
+					<div class="row">
+						<div class="column_3">
+							<div class="section">
+								<h3>Ideación y responsable</h3>
 								<p>
 									Iolanda Pensa
 								</p>
 							</div>
 							<div class="section">
-								<h3>Gruppo di lavoro</h3>
+								<h3>Grupo de trabajo</h3>
 								<p>
 									Federico Benvenuti<br/>
 									Valerio Iannucci<br/>
@@ -163,15 +174,20 @@
 						</div>
 						<div class="column_3">
 							<div class="section">
-								<h3>Web design e visualizzazione dei dati</h3>
+								<h3>Diseño web y visualización de datos</h3>
 								<p>
 									Giovanni Profeta
 								</p>
 							</div>
 							<div class="section">
-								<h3>Sostegno e collaborazione</h3>
+								<h3>Soporte y colaboración</h3>
 								<p>
 									<a href="https://www.wikimedia.it/" target="_blank">Wikimedia Italia</a>
+								</p>
+							</div>
+							<div class="section">
+								<p>
+									<a href="https://meta.wikimedia.org/wiki/Wikipedia_e_scuola_italiana" target="_blank">Pagina Wikimedia del proyecto</a>
 								</p>
 							</div>
 						</div>
@@ -180,8 +196,8 @@
 				<div id="sub_footer">
 					<div class="container">
 						<p>
-							Wikipedia e scuola italiana |
-							<a href="https://meta.wikimedia.org/wiki/Wikipedia_e_scuola_italiana" target="_blank">Pagina Wikimedia del progetto</a>
+							Wikicurrícula Uy |
+							<a href="https://wikimedistas.uy" target="_blank">Wikimedistas de Uruguay</a>
 						</p>
 					</div>
 				</div>
