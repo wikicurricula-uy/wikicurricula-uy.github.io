@@ -79,6 +79,10 @@ let improv_three = improvements_defs.append("g")
 let improv_col = "black"; //"#1ba51b";
 let improv_delay = 1800;
 
+let random_subject = null;
+let random_subject_index = null;
+let forbidden_subjects = ["Comunicación y sociedad"];
+
 function dv1(year,the_subject,sort) {
 	d3.tsv("assets/data/voci_" + year + ".tsv").then(loaded)
 
@@ -268,7 +272,7 @@ function dv1(year,the_subject,sort) {
 			.attr("transform","translate(7," + height + ")")
 
 		let yaxis_label = yaxis_label_box.append("text")
-			.text("visite giornaliere (media)")
+			.text("visitas diarias (promedio)")
 			.attr("y",-6)
 			.attr("font-size",font_size)
 
@@ -1216,9 +1220,13 @@ function getRandomIntInclusive(min, max) {
 }
 
 $(document).ready(function() {
-	const random_subject = getRandomIntInclusive(1,subjects.length-1);
-	document.getElementById("subjects").selectedIndex = random_subject;
-	dv1(2022,subjects[random_subject],parseInt(1));
+	while (!random_subject || forbidden_subjects.indexOf(random_subject) !== -1) {
+		random_subject_index = getRandomIntInclusive(1,subjects.length-1);
+		random_subject = subjects[random_subject_index];
+		console.log(random_subject);
+	}
+	document.getElementById("subjects").selectedIndex = random_subject_index;
+	dv1(2023,random_subject,parseInt(1));
 	get_year();
 });
 
