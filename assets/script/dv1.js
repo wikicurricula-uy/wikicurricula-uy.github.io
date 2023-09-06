@@ -338,15 +338,15 @@ function dv1(year,the_subject,sort) {
 	            	}
             	}
 
-            	// issues
-            	content += "<tr><td class='label'>plantillas</td><td class='value'>" + d.issues.toLocaleString()
+            	// referencias
+            	content += "<tr><td class='label'>referencias</td><td class='value'>" + d.notes.toLocaleString()
             	if(year != starting_year){
-            		let diff_issues = d.issues - d.issues_prev
-	            	if (diff_issues > 0){
-	            		content += "<td class='value decrease'>(" + /* d.issues_prev + " " + */ variation_perc(d.issues,d.issues_prev,"issues") + ")</td></tr>"
+            		let diff_notes = d.notes - d.notes_prev
+	            	if (diff_notes > 0){
+	            		content += "<td class='value decrease'>(" + /* d.notes_prev + " " + */ variation_perc(d.notes,d.notes_prev,"notes") + ")</td></tr>"
 	            	}
 	            	else {
-	            		content += "<td class='value increase'>(" + /* d.issues_prev + " " + */ variation_perc(d.issues,d.issues_prev,"issues") + ")</td></tr>"
+	            		content += "<td class='value increase'>(" + /* d.notes_prev + " " + */ variation_perc(d.notes,d.notes_prev,"notes") + ")</td></tr>"
 	            	}
             	}
 
